@@ -25,8 +25,8 @@ export default function DashNav() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Pages
+        <a href="/contact" className="flex items-center">
+          Contact
         </a>
       </Typography>
       <Typography
