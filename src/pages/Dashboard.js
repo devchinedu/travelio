@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import DocTable from "../components/dashboard/DocTable";
 
 function Dashboard() {
   return (
@@ -10,6 +11,7 @@ function Dashboard() {
         <meta name="description" content="Helmet app" />
         <link rel="canonical" href="http://example.com/my-app" />
       </Helmet>
+      <DocTable/>
     </div>
   );
 }

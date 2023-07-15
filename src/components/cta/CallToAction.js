@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
  
 export default function CallToAction() {
+  const today = new Date();
   return (
     <figure className="relative mx-auto max-w-screen-xl ">
       <img
@@ -14,11 +15,16 @@ export default function CallToAction() {
             Sara Lamalo
           </Typography>
           <Typography color="gray" className="mt-2 font-normal">
-            20 July 2022
+            {today.toLocaleDateString("en-US", {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
           </Typography>
         </div>
         <Typography variant="h5" color="blue-gray">
-          Growth
+          Destination of the Month
         </Typography>
       </figcaption>
     </figure>

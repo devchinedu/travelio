@@ -8,9 +8,9 @@ import {
     Typography,
   } from "@material-tailwind/react";
   import {
-    HomeIcon,
+    CloudArrowUpIcon,
+    BellAlertIcon,
     BellIcon,
-    CurrencyDollarIcon,
   } from "@heroicons/react/24/solid";
    
   export default function Timelines() {
@@ -27,18 +27,16 @@ import {
             <TimelineConnector />
             <TimelineHeader>
               <TimelineIcon className="p-2">
-                <HomeIcon className="h-4 w-4" />
+                <CloudArrowUpIcon className="h-4 w-4" />
               </TimelineIcon>
               <Typography variant="h5" color="blue-gray">
-                Timeline Title Here.
+                Register/Login
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
               <Typography color="gary" className="font-normal text-gray-600">
-                The key to more success is to have a lot of pillows. Put it this way, it took me
-                twenty five years to get these plants, twenty five years of blood sweat and tears, and
-                I&apos;m never giving up, I&apos;m just getting started. I&apos;m up to something. Fan
-                luv.
+               Register or Login to your account, if you don&apos;t have an account, you can register for free.
+               This will give you access to our dashboard where you can view you can select which service you want (e.g. document review or second passport).
               </Typography>
             </TimelineBody>
           </TimelineItem>
@@ -49,33 +47,28 @@ import {
                 <BellIcon className="h-4 w-4" />
               </TimelineIcon>
               <Typography variant="h5" color="blue-gray">
-                Timeline Title Here.
+                Upload Documents
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
               <Typography color="gary" className="font-normal text-gray-600">
-                The key to more success is to have a lot of pillows. Put it this way, it took me
-                twenty five years to get these plants, twenty five years of blood sweat and tears, and
-                I&apos;m never giving up, I&apos;m just getting started. I&apos;m up to something. Fan
-                luv.
+                Upload the required documents for the service you selected. You can upload documents from your computer or from your cloud storage (e.g. Google Drive, Dropbox, etc.).
+                And make payment for the service you selected.
               </Typography>
             </TimelineBody>
           </TimelineItem>
           <TimelineItem>
             <TimelineHeader>
               <TimelineIcon className="p-2">
-                <CurrencyDollarIcon className="h-4 w-4" />
+                <BellAlertIcon className="h-4 w-4" />
               </TimelineIcon>
               <Typography variant="h5" color="blue-gray">
-                Timeline Title Here.
+                Recieve updates
               </Typography>
             </TimelineHeader>
             <TimelineBody>
               <Typography color="gary" className="font-normal text-gray-600">
-                The key to more success is to have a lot of pillows. Put it this way, it took me
-                twenty five years to get these plants, twenty five years of blood sweat and tears, and
-                I&apos;m never giving up, I&apos;m just getting started. I&apos;m up to something. Fan
-                luv.
+                You will recieve updates within 4hrs of uploading your documents. You can also check the status of your application on your dashboard.
               </Typography>
             </TimelineBody>
           </TimelineItem>

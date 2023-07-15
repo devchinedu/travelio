@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from "react";
 import {
-  Navbar,
-  MobileNav,
-  Typography,
   Button,
   IconButton,
+  MobileNav,
+  Typography,
+  Popover,
+  PopoverContent,
+  PopoverHandler,
 } from "@material-tailwind/react";
- 
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
 
   const navMenu = [
     {
       title: "Doc Authentication",
-      link: "/doc-authentication",
+      link: "/docauth",
     },
     {
       title: "Visas",
@@ -26,13 +29,16 @@ export default function Nav() {
     {
       title: "Contact",
       link: "/contact",
-    }
-  ]
- 
+    },
+  ];
+
   useEffect(() => {
-    window.addEventListener("resize", () => window.innerWidth >= 960 && setOpenNav(false));
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false)
+    );
   }, []);
- 
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {navMenu.map((item, index) => (
@@ -40,7 +46,7 @@ export default function Nav() {
           <Typography
             as="a"
             href={item.link}
-            className="cursor-pointer hover:underline p1 font-bold"
+            className="cursor-pointer p1 font-bold transition-colors hover:text-yellow-500 focus:text-yellow-500"
           >
             {item.title}
           </Typography>
@@ -48,7 +54,7 @@ export default function Nav() {
       ))}
     </ul>
   );
- 
+
   return (
     <div className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-10 shadow-none rounded-none">
       <div className="container mx-auto flex items-center justify-between text-white">
@@ -63,15 +69,28 @@ export default function Nav() {
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <div className="">
-        <IconButton variant="text" className="rounded-full text-white">
-          <i className="fas fa-bell text-lg"/>
-        </IconButton>
-        <IconButton variant="text" className="rounded-full text-white">
-          <i className="fas fa-user-circle text-lg"/>
-        </IconButton>
-        <IconButton variant="text" className="rounded-full text-white">
-            <i className="fas fa-cog text-lg"/>
-        </IconButton>
+          <Popover placement="bottom">
+            <PopoverHandler>
+              <IconButton variant="text" className="rounded-full text-white">
+                <i className="fas fa-bell text-lg" />
+              </IconButton>
+            </PopoverHandler>
+            <PopoverContent>
+              <span>Login to see notifications</span>
+            </PopoverContent>
+          </Popover>
+          {/* <IconButton variant="text" className="rounded-full text-white">
+            <i className="fas fa-bell text-lg" />
+          </IconButton> */}
+          <Link to="/signuplogin">
+            <IconButton variant="text" className="rounded-full text-white">
+              <i className="fas fa-user-circle text-lg" />
+            </IconButton>
+          </Link>
+
+          <IconButton variant="text" className="rounded-full text-white">
+            <i className="fas fa-cog text-lg" />
+          </IconButton>
         </div>
         <IconButton
           variant="text"

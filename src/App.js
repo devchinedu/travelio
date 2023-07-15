@@ -10,6 +10,11 @@ import GlobalHeader from "./components/globalHeader/GlobalHeader";
 import Checkout from "./pages/Checkout";
 import Home from "./pages/Home";
 import SignupLogin from "./pages/SignupLogin";
+import DocAuth from "./pages/DocAuth";
+import Visas from "./pages/Visas";
+import Passports from "./pages/Passports";
+import Contact from "./pages/Contact";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
   return (
@@ -17,8 +22,8 @@ export default function App() {
       {window.location.pathname.includes("Dashboard") ? (
         <DashNavLayout>
         <Routes>
-          <Route path="/dashboard/*" element={<DocTable />} />
-          <Route path="*" element={<Navigate to="/dashboard/home" replace />} />
+          <Route  path="/dashboard" element={<Dashboard />} />
+          <Route path="*" element={<Navigate to="/Dashboard/docs" replace />} />
           <Route exact path="/Dashboard/docs" element={<DocTable />} />
           <Route exact path="/Dashboard/upload" element={<Upload />} />
           <Route exact path="/Dashboard/inbox" element={<Inbox />} />
@@ -32,6 +37,10 @@ export default function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/signuplogin" element={<SignupLogin />} />
             <Route exact path="/checkout" element={<Checkout />} />
+            <Route exact path="/docauth" element={<DocAuth />} />
+            <Route exact path="/visas" element={<Visas />} />
+            <Route exact path="/passports" element={<Passports />} />
+            <Route exact path="/contact" element={<Contact />} />
             <Route path="*" element={<h1>404 Not Found</h1>} />
           </Routes>
         </GlobalHeader>

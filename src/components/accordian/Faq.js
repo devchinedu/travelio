@@ -6,6 +6,26 @@ import {
 } from "@material-tailwind/react";
 
 export default function Faq() {
+  const data = [
+    {
+      id: 1,
+      title: "How much does it cost?",
+      description:
+        "Price may vary depending on the service you need.however, we offer the best price in the market. Please see our pricing page for more information.",
+    },
+    {
+      id: 2,
+      title: "How long does it take?",
+      description:
+        "Processing time may vary depending on the service you need. We do our best to get back to you within 4hrs of your request.",
+    },
+    {
+      id: 3,
+      title: "Do I have to pay upfront?",
+      description:
+        "No, you don't have to pay upfront. We will send you an invoice after we have reviewed your request. However, we charge a service fee of $10 for all service requests.",
+    },
+  ];
   const [open, setOpen] = useState(1);
 
   const handleOpen = (value) => {
@@ -15,39 +35,14 @@ export default function Faq() {
   return (
     <div className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-24">
       <Fragment>
-        <Accordion open={open === 1}>
-          <AccordionHeader onClick={() => handleOpen(1)}>
-            What is Material Tailwind?
-          </AccordionHeader>
-          <AccordionBody>
-            We&apos;re not always in the position that we want to be at.
-            We&apos;re constantly growing. We&apos;re constantly making
-            mistakes. We&apos;re constantly trying to express ourselves and
-            actualize our dreams.
-          </AccordionBody>
-        </Accordion>
-        <Accordion open={open === 2}>
-          <AccordionHeader onClick={() => handleOpen(2)}>
-            How to use Material Tailwind?
-          </AccordionHeader>
-          <AccordionBody>
-            We&apos;re not always in the position that we want to be at.
-            We&apos;re constantly growing. We&apos;re constantly making
-            mistakes. We&apos;re constantly trying to express ourselves and
-            actualize our dreams.
-          </AccordionBody>
-        </Accordion>
-        <Accordion open={open === 3}>
-          <AccordionHeader onClick={() => handleOpen(3)}>
-            What can I do with Material Tailwind?
-          </AccordionHeader>
-          <AccordionBody>
-            We&apos;re not always in the position that we want to be at.
-            We&apos;re constantly growing. We&apos;re constantly making
-            mistakes. We&apos;re constantly trying to express ourselves and
-            actualize our dreams.
-          </AccordionBody>
-        </Accordion>
+        {data.map((item, index) => (
+          <Accordion open={open === item.id}>
+            <AccordionHeader onClick={() => handleOpen(item.id)}>
+              {item.title}
+            </AccordionHeader>
+            <AccordionBody>{item.description}</AccordionBody>
+          </Accordion>
+        ))}
       </Fragment>
     </div>
   );
