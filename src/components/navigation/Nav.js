@@ -65,7 +65,7 @@ export default function Nav() {
         >
           {/* fa route */}
           <i className="fas fa-route text-2xl mr-2 text-yellow-500"></i>
-          Visa IO
+         Travel IO
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <div className="">
