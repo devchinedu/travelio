@@ -2,33 +2,25 @@ import React from "react";
 import HeaderSearch from "../headerSearch/HeaderSearch";
 import Nav from "../navigation/Nav";
 import Footer from "../navigation/Footer";
+import globalheader from "../../assets/img/globalheader.jpg";
 
 function GlobalHeader({ children }) {
-  const overlayColor = "#05203C";
-  const backgroundImageUrl =
-    "https://images.pexels.com/photos/164646/pexels-photo-164646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  // const overlayColor = "#05203C";
+  const overlayColor = "rgba(5, 32, 60, 0.9)";
+  // const overlayColors = "rgba(5, 32, 30, 0.9)";
+  const backgroundImageUrl = globalheader;
 
   const headerStyle = {
-    backgroundImage: `url(${backgroundImageUrl})`,
+    backgroundImage: `linear-gradient(${overlayColor}, ${overlayColor}), url(${backgroundImageUrl})`,
+    // backgroundImage: `url(${backgroundImageUrl})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     position: "relative",
   };
 
-  const overlayStyle = {
-    backgroundColor: overlayColor,
-    opacity: 0.7,
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-  };
-
   return (
     <div>
       <div style={headerStyle}>
-        {/* <div style={overlayStyle}></div> */}
         <Nav />
         <HeaderSearch />
       </div>

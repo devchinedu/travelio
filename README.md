@@ -1,3 +1,13 @@
+# Travel IO is a virtual travel agency that helps you with your travel needs.
+# Services to start with and then linearly add more services
+- [x] Hotel reservation
+- [x] Travel insurance
+- [x] Student admission
+- [x] Visa interview preparation
+- [x] Appointment booking
+- [x] Cover letters and LOI
+- [x] Invitation letters
+
 # What we do
 Review visa application and make sure all the documents are correct and complete.
 Assist with cover letter for $5.

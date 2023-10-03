@@ -13,10 +13,10 @@ export default function HeaderSearch() {
     <div className="mx-auto max-w-screen-xl py-20 px-4 lg:px-8 lg:py-20">
       <div className="header">
         <h1 className="text-white text-3xl font-bold pb-5">
-        Seamless Visa Solutions for Global Travelers
+        Travel IO : Your Premier Virtual Travel Assistant
         </h1>
         <Typography color="white" className="pb-10 text-lg">
-        Explore the World with Ease: Discover Your Visa Requirements and Apply Online for Any Destination
+        Explore, plan, and embark on unforgettable journeys with ease...
         </Typography>
         {/* flex items-center mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-24 gap-4 md:flex-row flex-col */}
       </div>
