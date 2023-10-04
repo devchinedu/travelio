@@ -106,7 +106,7 @@ function OurServices() {
   ];
 
   return (
-    <div className=" max-full py-20 px-4 lg:px-20 lg:py-20 bg-gray-50">
+    <div className=" py-10 px-4 lg:px-20 lg:py-50 bg-gray-50">
       <div className="header">
         <Typography
           className="text-4xl lg:text-5xl font-extrabold text-black mb-10 text-center"
@@ -153,12 +153,12 @@ function OurServices() {
             </Card>
           ))}
         </div>
-        <div className="product-hero flex items-center h-[calc(100vh_-_105px)]  justify-evenly lg:flex-nowrap flex-wrap">
+        <div className="max-w-screen-xl mt-28 mx-auto flex items-center justify-between lg:flex-nowrap flex-wrap">
       <div className="lg:w-2/5 bg-opacity-25  px-20 py-10 lg:px-10 lg:py-8 flex flex-col justify-center r">
         <Typography
           variant="h1"
           color="black"
-          className="mb-5 lg:mb-10 text-4xl lg:text-6xl font-bold"
+          className="mb-5 lg:mb-10 text-4xl lg:text-4xl font-bold"
         >
           Streamlined Travel Planning 
           <span className="font-light"> and Visa Assistance Services </span>
@@ -182,22 +182,22 @@ Our services have been meticulously crafted to cater to your needs seamlessly. W
         <img
           src="https://images.pexels.com/photos/15526759/pexels-photo-15526759/free-photo-of-palm-trees-on-a-tropical-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt=""
-          className="w-80 rounded-s-full rounded-b-full "
+          className="w-72 rounded-s-full rounded-b-full "
         />
         <img
           src="https://images.pexels.com/photos/4099168/pexels-photo-4099168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt=""
-          className="w-80 rounded-e-full rounded-b-full "
+          className="w-72 rounded-e-full rounded-b-full "
         />
         <img
           src="https://images.pexels.com/photos/6025765/pexels-photo-6025765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt=""
-          className="w-80 rounded-s-full rounded-t-full "
+          className="w-72 rounded-s-full rounded-t-full "
         />
         <img
           src="https://images.pexels.com/photos/2604792/pexels-photo-2604792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt=""
-          className="w-80 rounded-e-full rounded-t-full"
+          className="w-72 rounded-e-full rounded-t-full"
         />
       </div>
     </div>
