@@ -4,16 +4,16 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const navMenu = [
     {
-      title: "Doc Authentication",
-      link: "/docauth",
+      title: "About us",
+      link: "/about-us",
     },
     {
-      title: "Visas",
-      link: "/visas",
+      title: "Services",
+      link: "/services",
     },
     {
-      title: "Passports",
-      link: "/passports",
+      title: "Blog",
+      link: "/blog",
     },
     {
       title: "Contact",

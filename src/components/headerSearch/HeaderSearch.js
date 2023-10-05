@@ -10,13 +10,13 @@ export default function HeaderSearch() {
   }
 
   return (
-    <div className="mx-auto max-w-screen-xl py-20 px-4 lg:px-8 lg:py-20">
+    <div className="mx-auto max-w-screen-xl py-20 px-6 lg:px-8 lg:py-20">
       <div className="header">
         <h1 className="text-white text-3xl font-bold pb-5">
-        Travel IO : Your Premier Virtual Travel Assistant
+          Travel IO : Your Premier Virtual Travel Assistant
         </h1>
         <Typography color="white" className="pb-10 text-lg">
-        Explore, plan, and embark on unforgettable journeys with ease...
+          Explore, plan, and embark on unforgettable journeys with ease...
         </Typography>
         {/* flex items-center mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-24 gap-4 md:flex-row flex-col */}
       </div>
@@ -114,7 +114,7 @@ export default function HeaderSearch() {
             ripple="light"
             onClick={handleSearch}
           >
-            Check Requirements
+            Request
           </Button>
         </div>
       </div>

@@ -22,7 +22,8 @@ function GlobalHeader({ children }) {
     <div>
       <div style={headerStyle}>
         <Nav />
-        <HeaderSearch />
+        {/* if homepage then show else dont show */}
+        { window.location.pathname === "/" && <HeaderSearch /> }
       </div>
       {children}
       <Footer />

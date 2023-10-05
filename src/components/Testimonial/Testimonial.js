@@ -93,7 +93,7 @@ const Testimonial = () => {
     // </div>
 
     <div className="min-w-screen   flex items-center justify-center">
-      <div className="w-full  px-5 py- lg:py-20 text-gray-800">
+      <div className="w-full  px-5 py-10 lg:py-20 text-gray-800">
         <div className="w-full max-w-6xl mx-auto">
           <div className="text-center max-w-xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold mb-5 text-black">

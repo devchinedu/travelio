@@ -10,9 +10,9 @@ import GlobalHeader from "./components/globalHeader/GlobalHeader";
 import Checkout from "./pages/Checkout";
 import Home from "./pages/Home";
 import SignupLogin from "./pages/SignupLogin";
-import DocAuth from "./pages/DocAuth";
-import Visas from "./pages/Visas";
-import Passports from "./pages/Passports";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 
@@ -37,11 +37,11 @@ export default function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/signuplogin" element={<SignupLogin />} />
             <Route exact path="/checkout" element={<Checkout />} />
-            <Route exact path="/docauth" element={<DocAuth />} />
-            <Route exact path="/visas" element={<Visas />} />
-            <Route exact path="/passports" element={<Passports />} />
+            <Route exact path="/about-us" element={<About />} />
+            <Route exact path="/services" element={<Services />} />
+            <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route path="*" element={<h1>404 Not Found</h1>} />
+            <Route path="*" element={<h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-center py-20 px-20" > ⛔️ 404 Not Found...</h1>} />
           </Routes>
         </GlobalHeader>
       )}

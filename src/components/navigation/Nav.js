@@ -15,16 +15,16 @@ export default function Nav() {
 
   const navMenu = [
     {
-      title: "Doc Authentication",
-      link: "/docauth",
+      title: "About us",
+      link: "/about-us",
     },
     {
-      title: "Visas",
-      link: "/visas",
+      title: "Services",
+      link: "/services",
     },
     {
-      title: "Passports",
-      link: "/passports",
+      title: "Blog",
+      link: "/blog",
     },
     {
       title: "Contact",
@@ -68,7 +68,7 @@ export default function Nav() {
          Travel IO
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <div className="">
+        <div className="ml-auto xl:ml-0">
           <Popover placement="bottom">
             <PopoverHandler>
               <IconButton variant="text" className="rounded-full text-white">
@@ -131,10 +131,10 @@ export default function Nav() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        <div className="container mx-auto">
+        <div className="container mx-auto text-white">
           {navList}
           <Button variant="gradient" size="sm" fullWidth className="mb-2">
-            <span>Buy Now</span>
+            <span>Get a Quote</span>
           </Button>
         </div>
       </MobileNav>

@@ -6,6 +6,7 @@ import OtherServices from "../components/services/OtherServices";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Timelines from "../components/timeline/Timelines";
 import OurServices from "../components/services/OurServices";
+import Packages from "../components/services/Packages";
 function Home() {
   return (
     <div>
@@ -16,10 +17,11 @@ function Home() {
         <link rel="canonical" href="http://example.com/my-app" />
       </Helmet>
       <OurServices />
+      <Packages/>
       <Testimonial />
       <CallToAction />
       <Timelines />
-      <OtherServices />
+      {/* <OtherServices /> */}
       <Faq />
     </div>
   );
