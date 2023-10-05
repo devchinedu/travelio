@@ -7,6 +7,7 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import Timelines from "../components/timeline/Timelines";
 import OurServices from "../components/services/OurServices";
 import Packages from "../components/services/Packages";
+import ChatWidget from "../components/chat/ChatWidget";
 function Home() {
   return (
     <div>
@@ -23,6 +24,7 @@ function Home() {
       <Timelines />
       {/* <OtherServices /> */}
       <Faq />
+      <ChatWidget />
     </div>
   );
 }
