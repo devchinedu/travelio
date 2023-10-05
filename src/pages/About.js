@@ -1,10 +1,17 @@
 import React from 'react'
-import AboutUs from '../components/about/AboutUs'
+import{    AboutBanner,
+  AboutCenterCta,
+  AboutHero,
+  OurTeam} from '../components/about/index'
 
 function About() {
   return (
     <div>
-      <AboutUs/>
+      <AboutHero/>
+      <AboutBanner/>
+      <OurTeam/>
+      <AboutCenterCta/>
+
     </div>
   )
 }

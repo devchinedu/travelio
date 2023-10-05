@@ -26,10 +26,6 @@ export default function Nav() {
       title: "Blog",
       link: "/blog",
     },
-    {
-      title: "Contact",
-      link: "/contact",
-    },
   ];
 
   useEffect(() => {

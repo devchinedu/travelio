@@ -13,7 +13,6 @@ import SignupLogin from "./pages/SignupLogin";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 
 export default function App() {
@@ -40,7 +39,6 @@ export default function App() {
             <Route exact path="/about-us" element={<About />} />
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/blog" element={<Blog />} />
-            <Route exact path="/contact" element={<Contact />} />
             <Route path="*" element={<h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-center py-20 px-20" > ⛔️ 404 Not Found...</h1>} />
           </Routes>
         </GlobalHeader>
