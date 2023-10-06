@@ -1,5 +1,6 @@
 import { Button, Typography } from '@material-tailwind/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function AboutCenterCta() {
   return (
@@ -13,6 +14,7 @@ function AboutCenterCta() {
         What are you waiting for?
           <span className="font-thin text-white"> Get Started Today!</span>
         </Typography>
+        <Link to="/services">
         <Button
           variant="outlined"
           color='white'
@@ -20,6 +22,7 @@ function AboutCenterCta() {
         >
           Get Started
         </Button>
+        </Link>
      
     </div>
   )

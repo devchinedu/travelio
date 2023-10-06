@@ -14,6 +14,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import Dashboard from "./pages/Dashboard";
+import DynamicServices from "./pages/DynamicServices";
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
             <Route exact path="/about-us" element={<About />} />
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/blog" element={<Blog />} />
+            <Route exact path="/dynamicservices/:id" element={<DynamicServices />} />
             <Route path="*" element={<h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-center py-20 px-20" > ⛔️ 404 Not Found...</h1>} />
           </Routes>
         </GlobalHeader>

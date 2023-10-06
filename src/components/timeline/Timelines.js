@@ -36,7 +36,7 @@ import {
             <TimelineBody className="pb-8">
               <Typography color="gary" className="font-normal text-gray-600">
                Register or Login to your account, if you don&apos;t have an account, you can register for free.
-               This will give you access to our dashboard where you can view you can select which service you want (e.g. document review or second passport).
+               This will give you access to our dashboard where you can request for any of our services and track the status of your request.
               </Typography>
             </TimelineBody>
           </TimelineItem>
@@ -52,8 +52,8 @@ import {
             </TimelineHeader>
             <TimelineBody className="pb-8">
               <Typography color="gary" className="font-normal text-gray-600">
-                Upload the required documents for the service you selected. You can upload documents from your computer or from your cloud storage (e.g. Google Drive, Dropbox, etc.).
-                And make payment for the service you selected.
+              Follow the guidline and fill in the required information for the service you want.
+             Once you have filled in the required information, a reference number will be generated for you. You can use this reference number to make payment and track the status of your request.
               </Typography>
             </TimelineBody>
           </TimelineItem>
@@ -63,12 +63,12 @@ import {
                 <BellAlertIcon className="h-4 w-4" />
               </TimelineIcon>
               <Typography variant="h5" color="blue-gray">
-                Recieve updates
+                Payment and Updates
               </Typography>
             </TimelineHeader>
             <TimelineBody>
               <Typography color="gary" className="font-normal text-gray-600">
-                You will recieve updates within 4hrs of uploading your documents. You can also check the status of your application on your dashboard.
+                Make payment using the provided reference number.Once payment is confirmed, your request will be processed and you will normally recieve and updates within 4hrs. You can also check the status of your application on your dashboard.
               </Typography>
             </TimelineBody>
           </TimelineItem>

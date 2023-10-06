@@ -1,5 +1,6 @@
 import { Typography, Button } from "@material-tailwind/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function AboutHero() {
@@ -27,6 +28,7 @@ function AboutHero() {
           partnership, we are committed to supporting you throughout every stage
           of your journey
         </Typography>
+        <Link to="/services">
         <Button
           variant="outlined"
           color="white"
@@ -34,6 +36,7 @@ function AboutHero() {
         >
           See Our Services
         </Button>
+        </Link>
       </div>
       {/* <div className="absolute bottom-4 w-screen">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

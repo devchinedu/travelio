@@ -1,14 +1,14 @@
-import React from 'react'
-import OurServices from '../components/services/OurServices'
-import Packages from '../components/services/Packages'
+import React from "react";
+import OurServices from "../components/services/OurServices";
+import Packages from "../components/services/Packages";
 
 function Services() {
   return (
     <div>
       <OurServices />
-      <Packages/>
+      <Packages />
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;

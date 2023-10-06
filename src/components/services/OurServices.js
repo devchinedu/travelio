@@ -9,14 +9,14 @@ import {
   Select,
   Typography,
 } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function OurServices() {
+  const location = useLocation();
   const data = [
     {
       title: "Hotel reservation",
-      link: "/hotel-reservation",
-      cost: "$10",
+      link: "/dynamicservices/1",
       fasIcon: "fas fa-hotel",
       color: "text-green-500",
       description:
@@ -24,7 +24,7 @@ function OurServices() {
     },
     {
       title: "Flight reservation",
-      link: "/flight-reservation",
+      link: "/dynamicservices/2",
       cost: "$150",
       fasIcon: "fas fa-plane",
       color: "text-orange-500",
@@ -33,7 +33,7 @@ function OurServices() {
     },
     {
       title: "Travel insurance",
-      link: "/travel-insurance",
+      link: "/dynamicservices/3",
       cost: "$55",
       fasIcon: "fas fa-shield-alt",
       color: "text-blue-500",
@@ -42,7 +42,7 @@ function OurServices() {
     },
     {
       title: "Student admission",
-      link: "/student-admission",
+      link: "/dynamicservices/4",
       cost: "$25",
       fasIcon: "fas fa-user-graduate",
       color: "text-yellow-500",
@@ -51,7 +51,7 @@ function OurServices() {
     },
     {
       title: "Visa interview preparation",
-      link: "/visa-interview-preparation",
+      link: "/dynamicservices/5",
       cost: "$40",
       fasIcon: "fas fa-user-check",
       color: "text-pink-500",
@@ -60,7 +60,7 @@ function OurServices() {
     },
     {
       title: "Appointment booking",
-      link: "/appointment-booking",
+      link: "/dynamicservices/6",
       cost: "$80",
       fasIcon: "fas fa-calendar-check",
       color: "text-purple-500",
@@ -69,7 +69,7 @@ function OurServices() {
     },
     {
       title: "Cover letters and LOI",
-      link: "/cover-letters-and-loi",
+      link: "/dynamicservices/7",
       cost: "$80",
       fasIcon: "fas fa-envelope-open-text",
       color: "text-teal-500",
@@ -78,7 +78,7 @@ function OurServices() {
     },
     {
       title: "Invitation letters",
-      link: "/invitation-letters",
+      link: "/dynamicservices/8",
       cost: "$80",
       fasIcon: "fas fa-envelope-open-text",
       color: "text-indigo-500",
@@ -87,7 +87,7 @@ function OurServices() {
     },
     {
       title: "Document attestation",
-      link: "/document-attestation",
+      link: "/dynamicservices/9",
       cost: "$80",
       fasIcon: "fas fa-file-signature",
       color: "text-red-500",
@@ -96,7 +96,7 @@ function OurServices() {
     },
     {
       title: "Document translation",
-      link: "/document-translation",
+      link: "/dynamicservices/10",
       cost: "$80",
       fasIcon: "fas fa-book",
       color: "text-lime-500",
@@ -118,7 +118,9 @@ function OurServices() {
 
         <div className="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {data.map((item) => (
+           
             <Card className="mt-6 text-center transition duration-200 ease-in-out hover:shadow-orange-500 pointer">
+               <Link to={item.link}>
               <CardBody>
                 <i className={`${item.fasIcon} text-4xl pb-2 ${item.color}`}></i>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -150,6 +152,7 @@ function OurServices() {
                   </Button>
                 </a>
               </CardFooter>
+            </Link>
             </Card>
           ))}
         </div>
@@ -180,7 +183,8 @@ function OurServices() {
               or seek an enduring partnership, we are committed to supporting
               you throughout every stage of your journey.
             </Typography>
-            <a href="/portofolio" className="z-40">
+            {location.pathname !== "/services" ? (
+            <Link to="/services">
               <Button
                 variant="filled"
                 color="teal"
@@ -188,7 +192,8 @@ function OurServices() {
               >
                 Learn More...
               </Button>
-            </a>
+            </Link>
+          ) : null}
           </div>
           <div className="grid grid-cols-2 gap-4 mt-10 xl:mt-0 mx-auto  px-8 py-2 xl:p-0">
             <img

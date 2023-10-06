@@ -1,5 +1,6 @@
 import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AboutBanner() {
   return (
@@ -15,15 +16,18 @@ function AboutBanner() {
         <Typography
           variant="h2"
           color="black"
-          className="mb-8 lg:mb-14 text-3xl lg:text-6xl font-bold w-full lg:w-1/2"
+          className="mb-8 lg:mb-14 text-3xl lg:text-5xl font-bold w-full lg:w-1/2"
         >
-        Seamless Travel Experiences: 
-          <span className="font-thin"> Explore the World with Our Virtual Travel Assistant</span>
+          Seamless Travel Experiences:
+          <span className="font-thin">
+            {" "}
+            Explore the World with Our Virtual Travel Assistant
+          </span>
         </Typography>
         <Typography
           variant="p"
           color="black"
-          className="mb-8 lg:mb-14 text-normal lg:text-xl font-normal text-justify"
+          className="mb-8 lg:mb-14 text-normal font-normal text-justify"
         >
           Step into the realm of virtual travel assistance, where innovation and
           imagination know no bounds! We are a dynamic and impassioned team
@@ -44,12 +48,14 @@ function AboutBanner() {
           heights. Welcome aboard, fellow traveler, and let's embark on an
           adventure of boundless possibilities!
         </Typography>
-        <Button
-          variant="filled"
-          className="w-auto text-md font-light rounded-none bg-black"
-        >
-          OUR SERVICES
-        </Button>
+        <Link to="/services">
+          <Button
+            variant="filled"
+            className="w-auto text-md font-light rounded-none bg-black"
+          >
+            OUR SERVICES
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import HeaderSearch from "../headerSearch/HeaderSearch";
 import Nav from "../navigation/Nav";
 import Footer from "../navigation/Footer";
 import globalheader from "../../assets/img/globalheader.jpg";
+import { useLocation } from "react-router-dom";
 
 function GlobalHeader({ children }) {
   // const overlayColor = "#05203C";
@@ -18,12 +19,13 @@ function GlobalHeader({ children }) {
     position: "relative",
   };
 
+  const location = useLocation();
+
   return (
     <div>
       <div style={headerStyle}>
         <Nav />
-        {/* if homepage then show else dont show */}
-        { window.location.pathname === "/" && <HeaderSearch /> }
+        {location.pathname === "/" && <HeaderSearch />}
       </div>
       {children}
       <Footer />
