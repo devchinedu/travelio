@@ -130,28 +130,32 @@ function DynamicServices() {
       id: 11,
       title: "Standard Service",
       cost: "$29",
-      description: "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance, and Student Admissions, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
+      description:
+        "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance, and Student Admissions, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
       image: visa,
     },
     {
       id: 12,
       title: "Premium Service",
       cost: "$49",
-      description: "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance,  Student Admissions and Visa interview preparation, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
+      description:
+        "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance,  Student Admissions and Visa interview preparation, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
       image: flight,
     },
     {
       id: 13,
       title: "Business Service",
       cost: "$69",
-      description: "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance,  Student Admissions, Visa interview preparation, Appointment booking, Cover letters and LOI, Invitation letters, Document attestation and Document translation, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
+      description:
+        "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance,  Student Admissions, Visa interview preparation, Appointment booking, Cover letters and LOI, Invitation letters, Document attestation and Document translation, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
       image: insurance,
     },
     {
       id: 14,
       title: "Gold Service",
       cost: "$99",
-      description: "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance,  Student Admissions, Visa interview preparation, Appointment booking, Cover letters and LOI, Invitation letters, Document attestation and Document translation, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
+      description:
+        "Tailored to the discerning individual traveler, our comprehensive service encompasses Hotel Reservations, Flight Bookings, Travel Insurance,  Student Admissions, Visa interview preparation, Appointment booking, Cover letters and LOI, Invitation letters, Document attestation and Document translation, ensuring a seamless journey from start to finish. Experience the convenience of secure and hassle-free arrangements without the necessity of a credit card. Entrust us with managing your bookings, as we prioritize your ease and satisfaction throughout every step of your adventure.",
       image: loi,
     },
   ];
@@ -161,8 +165,8 @@ function DynamicServices() {
   return (
     <div className="mx-auto max-w-screen-xl py-20 px-6 lg:px-8 lg:py-20">
       {service ? (
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="md:w-1/2">
+        <div className="flex flex-col md:flex-row justify-between items-center flex-wrap lg:flex-nowrap">
+          <div className="lg:w-1/2 w-full">
             <Typography color="black" className="text-2xl font-bold mb-4">
               {service.title}
             </Typography>
@@ -188,7 +192,6 @@ function DynamicServices() {
           <div className="howto">
             <HowToBuy />
           </div>
-                          
         </div>
       ) : (
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-center py-20 px-20">

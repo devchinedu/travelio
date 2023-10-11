@@ -5,17 +5,17 @@ import "./Hero.css";
 
 function AboutHero() {
   return (
-    <div className="about-hero mx-auto flex items-center h-[calc(100vh_-_105px)] justify-center relative">
+    <div className="about-hero mx-auto flex items-center h-[calc(100vh_-_105px)] justify-center ">
       <div className="lg:w-2/4 w-full bg-opacity-90 bg-black px-8 py-10 lg:px-10 lg:py-8 flex flex-col justify-center items-center ">
         <Typography
           variant="h1"
           color="white"
-          className="mb-5 lg:mb-10 text-4xl lg:text-5xl font-normal text-center"
+          className="mb-5 lg:mb-10 text-2xl lg:text-5xl font-normal text-center"
         >
           <span className="font-bold"> Travel IO </span> is a{" "}
           <span className="font-bold">Virtual Travel</span> Solutions provider
         </Typography>
-        <Typography variant="p" color="white" className="mb-14 font-normal">
+        <Typography variant="p" color="white" className="mb-14 font-normal text-justify">
           We understand the challenges involved in planning a trip, spanning
           from the visa application process to reaching your destination. We
           recognize that many travelers encounter obstacles when acquiring the
@@ -32,7 +32,7 @@ function AboutHero() {
         <Button
           variant="outlined"
           color="white"
-          className="text-xl rounded-none"
+          className="lg:text-xl rounded-none"
         >
           See Our Services
         </Button>

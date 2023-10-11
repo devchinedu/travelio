@@ -114,12 +114,12 @@ export default function Packages() {
         </Typography>
         <hr />
       </div>
-      <div className=" py-10 px-4 lg:px-20 lg:py-50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className=" py-10 px-4 lg:px-20 lg:py-50 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
         {packages.map((item) => (
           <Card
             color="white"
             variant="gradient"
-            className="w-full max-w-[20rem] p-8 hover:shadow-green-500 hover:scale-105 transition-all duration-300 "
+            className="w-full max-w-[20rem] p-8 hover:shadow-green-500 hover:scale-105 transition-all duration-300 mx-auto"
           >
             <Link to={/dynamicservices/ + item.id}>
             <CardHeader
